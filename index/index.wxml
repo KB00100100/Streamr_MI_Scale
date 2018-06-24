@@ -1,0 +1,41 @@
+<wxs module="utils">
+  module.exports.max = function(n1, n2) {
+    return Math.max(n1, n2)
+  }
+  module.exports.len = function(arr) {
+    arr = arr || []
+    return arr.length
+  }
+</wxs>
+
+<view class="container" hidden='{{weight_hidden}}'>
+  <view class='progress_box'>
+    <canvas class="progress_canvasbg" canvas-id="canvasProgressbg"> </canvas>
+    <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+    <view class="progress_text">
+      <!--<view class="progress_dot"></view>-->
+      <text class='progress_info1'> {{weight_change}}<text class='progress_info2'> 斤</text></text>
+      <text class='progress_info2'>称重中...</text>
+    </view>
+  </view>
+</view>
+
+<view class='image_text' hidden='{{!weight_hidden}}'>
+  <view class='image_part_text1'>{{weight_stable}} 斤</view>
+  <view class='image_part_text2'>{{weight_stable_kg}} KG</view>
+</view>
+
+<view class='button' hidden='{{!weight_hidden}}'>
+  <button class='button-sp-area' type='primary' size='mini' bindtap='connect_MI_scale'>连接MI体重计</button>
+  <button class='button-sp-area' type='primary' size='mini' bindtap='upload_to_Streamr'>上传至Streamr市场</button>
+</view>
+
+<view class='input1' hidden='{{!weight_hidden}}'>
+  <text class='input_text'>Stream ID:</text>
+  <input class='input_input' bindblur='OnStream_IDBlur' value='{{Stream_ID}}' placeholder='请输入Stream ID' />
+</view>
+
+<view class='input2' hidden='{{!weight_hidden}}'>
+  <text class='input_text' decode="{{true}}" space="{{true}}">API &nbsp;&nbsp;&nbsp; key:</text>
+  <input class='input_input' bindblur='OnAPI_KEYBlur' value='{{API_KEY}}' placeholder='请输入Streamr API key' />
+</view>
