@@ -4,4 +4,5 @@
 
 具体步骤请参考[教您5分钟内在Streamr市场出售体重数据](https://blog.csdn.net/qq_21921243/article/details/80791544)
 
-![image](https://img-blog.csdn.net/20180701094115635?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIxOTIxMjQz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+## 感兴趣请关注公众号获取更多信息
+![image](https://github.com/KB00100100/Streamr_MI_Scale/blob/master/gongzhonghao.jpg)
